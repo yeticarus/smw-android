@@ -89,6 +89,19 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
+        android:id="@+id/Button_B"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/button_b"
+        android:src="@drawable/b_button"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@id/Button_ABXY"
+        app:layout_constraintLeft_toLeftOf="@id/Button_ABXY"
+        app:layout_constraintRight_toRightOf="@id/Button_ABXY" />
+
+    <ImageButton
         android:id="@+id/Button_ABXY"
         android:layout_width="150dp"
         android:layout_height="150dp"
