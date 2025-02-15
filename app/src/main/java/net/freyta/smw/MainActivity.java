@@ -235,27 +235,27 @@ public class MainActivity extends SDLActivity{
 //                return false;
 //            }
 //        });
-//        overlayView.findViewById(R.id.Button_B).setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View view, MotionEvent motionEvent) {
-//                switch(motionEvent.getAction()){
-//
-//                    case MotionEvent.ACTION_HOVER_ENTER:
-//                    case MotionEvent.ACTION_MOVE:
-//                    case MotionEvent.ACTION_DOWN:
-//                        onNativeKeyDown(keyCodeFor_B);
-//                        return true;
-//
-//                    case MotionEvent.ACTION_HOVER_EXIT:
-//                    case MotionEvent.ACTION_OUTSIDE:
-//                    case MotionEvent.ACTION_UP:
-//                        onNativeKeyUp(keyCodeFor_B);
-//                        return true;
-//
-//                }
-//                return false;
-//            }
-//        });
+        overlayView.findViewById(R.id.Button_B).setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch(motionEvent.getAction()){
+
+                    case MotionEvent.ACTION_HOVER_ENTER:
+                    case MotionEvent.ACTION_MOVE:
+                    case MotionEvent.ACTION_DOWN:
+                        onNativeKeyDown(keyCodeFor_B);
+                        return true;
+
+                    case MotionEvent.ACTION_HOVER_EXIT:
+                    case MotionEvent.ACTION_OUTSIDE:
+                    case MotionEvent.ACTION_UP:
+                        onNativeKeyUp(keyCodeFor_B);
+                        return true;
+
+                }
+                return false;
+            }
+        });
 //        overlayView.findViewById(R.id.Button_X).setOnTouchListener(new View.OnTouchListener() {
 //            @Override
 //            public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -434,7 +434,7 @@ public class MainActivity extends SDLActivity{
                         return true;
 
                     case MotionEvent.ACTION_MOVE: //Support sliding on the ABXY
-                        onNativeKeyUp(keyCodeFor_Y);
+                        //onNativeKeyUp(keyCodeFor_Y);
                         onNativeKeyUp(keyCodeFor_A);
                         onNativeKeyUp(keyCodeFor_B);
                         onNativeKeyUp(keyCodeFor_X);
