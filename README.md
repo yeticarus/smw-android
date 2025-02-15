@@ -22,7 +22,6 @@ R3 = Load State <br>
 <h4>Default Settings for touch screen:</h4>
 Start + R = Save State<br>
 Start + L = Load State<br>
-Known issues with touch screen: pressing B while holding Y will shortly release Y (You can't jump holding a shell).<br>
 
 *Note: Credit to [@yeticarus](https://github.com/yeticarus) for their touch screen code.* 
 
@@ -45,3 +44,9 @@ Known issues with touch screen: pressing B while holding Y will shortly release 
 <h4>Cleaning</h4>
 If you wish, you can now delete your rom, the sourcecode.zip, the extracted source code, and even uninstall PyDroid (or just Pillow and pyyaml).</br>
 Just keep the apk installed with the smw_assets.dat in the correct location.
+
+<h2>Changelog</h2>
+<h3>Version 1.1.0</h3>
+Fixing known issue: pressing B while holding Y used to shortly release Y (You couldn't jump holding a shell).<br>
+<h3>Version 1.0.2</h3>
+Now the source code include the fix for secondary entrance issue at data extraction. (https://github.com/snesrev/smw/pull/43)
